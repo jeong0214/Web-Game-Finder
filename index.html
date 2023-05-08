@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Finder</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Game Finder</h1>
+      <div class="guide_chat">
+        <label for="game">어떤 장르에 게임을 원하시나요?</label>
+        <input type="text" id="game" placeholder="게임장르" />
+        <label for="platform">어떤 플랫폼으로 하시나요?</label>
+        <input type="text" id="platform" placeholder="플랫폼" />
+        <button id="btnSendMessage" disabled>게임 추천</button>
+      </div>
+      <div class="loader">
+        <img src="./img/loading.gif" alt="" srcset="" />
+      </div>
+      <div class="chat_con">
+        <div class="chat_message">
+          <p class="assistant"></p>
+        </div>
+        <div class="chat_message">
+          <p></p>
+        </div>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="추가 질문이 있으신가요?" />
+        <button id="btn">질문하기</button>
+      </div>
+      <button class="restart">새로운 게임 추천</button>
+      <div class="kakaoAd">
+        <ins
+          class="kakao_ad_area"
+          style="display: none"
+          data-ad-unit="DAN-Lmaaw7nCr9cY1PQy"
+          data-ad-width="320"
+          data-ad-height="50"
+        ></ins>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
+    <script src="index.js" defer></script>
+  </body>
+</html>
